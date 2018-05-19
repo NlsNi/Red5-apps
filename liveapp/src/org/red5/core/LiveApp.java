@@ -36,13 +36,16 @@ public class LiveApp extends MultiThreadedApplicationAdapter {
     {
 		if(true)
     	{
-    		try {
+    		try 
+			{
     			String streamName = stream.getPublishedName();
     			log.info("Recording stream: " + streamName );
 				stream.saveAs(streamName, true);
 				
-			} catch (IOException | ResourceNotFoundException
-					| ResourceExistException e) {
+			} 
+			catch (IOException | ResourceNotFoundException
+					| ResourceExistException e) 
+			{
 				e.printStackTrace();
 			}
     	}
